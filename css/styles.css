@@ -1,0 +1,329 @@
+/* Tested on Chrome Version 50.0.2661.102 (64-bit) and Firefox 47.0 */
+
+/* Table of Contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Base Element Styles
+- Base Layout Styles
+- Header
+- Hero
+- Sub-Header
+- Portfolio
+- Skills
+- Contact
+- Footer
+- Media Queries
+*/
+
+/* Base Element Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+* {
+  color: #004256;
+  text-decoration: none; }
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0; }
+
+
+
+/* Base Layout Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container {
+  max-width: 320px;
+  margin: 0 auto; 
+  background: #fafafa; }
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main-header {
+  border: 1px solid #fafafa;
+  background: #fafafa; }
+
+.name a {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #00baef;
+  font-size: 1.10em; 
+  text-align: center; }
+
+.main-nav a {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  background: #fff;
+  font-size: 0.95em;
+  text-align: center;
+  text-transform: uppercase; }
+
+
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero {  
+  background: #fafafa; }
+
+.hero-image {
+  width: 280px; 
+  padding: 40px 20px 20px; }
+
+.hero-description {
+  padding: 20px 20px 40px;
+  font-size: 0.95em;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center; }
+
+
+
+/* Sub-Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sub-header {
+  display: block;
+  padding: 40px 40px;
+  font-size: 0.95em;
+  text-align: center;
+  text-transform: uppercase; }
+
+
+
+/* Portfolio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.portfolio {
+  background: #fff; }
+
+.portfolio-image {
+  padding: 10px 10px;
+  max-width: 300px; }
+
+.col h3 {
+  padding: 10px;
+  color: #0080af;
+  text-align: center; }
+
+.col p {
+  padding: 10px;
+  color: #777;
+  line-height: 1.5;
+  text-align: center; }
+
+
+
+/* Skills
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.skills {
+  background: #fff; }
+
+.skills-image {
+  padding: 10px 10px;
+  max-width: 300px; }
+
+
+
+/* Contact
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contact {
+  background: #fafafa; }
+
+.contact-description, .contact-info {
+  padding: 10px 10px 20px;
+  margin: 0 auto;
+  color: #777;
+  font-size: 0.95em;
+  font-weight: 200;
+  line-height: 1.5;
+  text-align: center; }
+
+.contact-info {
+  padding: 20px 10px; }
+
+.contact-spacing {
+  padding-bottom: 40px; }
+
+.contact-info b {
+  color: #004256; }
+
+
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.main-footer {
+  max-width: 300px;
+  border-top: 1px solid #004256;
+  margin: 0 auto;
+  background: #fafafa; }
+
+.footer-name a {
+  float: left;
+  padding: 20px 10px;
+  font-size: 0.75em; }
+
+.footer-nav-mobile a {
+  float: right;
+  padding: 20px 10px;
+  font-size: 0.75em;
+  text-transform: uppercase; }
+
+.footer-nav {
+  display: none; }
+
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* --- Tablet --- */
+
+@media (min-width: 768px) { 
+
+  /* --- Base Layout Styles --- */
+
+  .container {
+    max-width: 768px; }
+
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px; 
+    background: #fff; }
+
+  /* --- Header ---*/
+
+  .main-nav ul {
+    text-align: center; }
+
+  .main-nav li {
+    display: inline-block; }
+
+  .main-nav a {
+    background: #fafafa; }
+
+  /* --- Hero ---*/
+
+  .hero-image {
+    float: right;
+    width: 40%;
+    padding: 40px 20px; }
+
+  .hero-description {
+    padding: 40px 20px;
+    font-size: 1.3em;
+    font-weight: 200;
+    text-align: left; }
+
+  /* --- Portfolio, skills --- */
+
+  .col {
+    float: left; }
+
+  .col, .col h3, .col p {
+    max-width: 374px; }
+
+  .portfolio-image, .skills-image {
+    max-width: 354px; }
+
+  /* --- Contact --- */
+
+  .contact-description, .contact-info {
+    max-width: 60%; }
+
+  /* --- Footer --- */
+
+  .main-footer {
+    padding-bottom: 80px;
+    max-width: 728px; }
+
+  .footer-nav-mobile {
+    display: none; }
+
+  .footer-nav {
+    float: right;
+    display: block; 
+    padding: 20px 10px; }
+
+  .footer-nav li {
+    display: inline-block; }
+
+  .footer-nav a {
+    padding: 0 10px;
+    font-size: 0.75em;
+    text-transform: uppercase; }
+
+}/* --- end tablet --- */
+
+
+
+/* --- Desktop --- */
+@media (min-width: 1024px) { 
+
+  /* --- Base Layout Styles --- */
+
+  .container {
+    max-width: 1024px; }
+
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px; 
+    background: #fafafa; }
+
+  /* --- Header ---*/
+
+  .main-header { 
+    background: #00baef; }
+
+  .name a {
+    float: left;
+    padding: 8.5px 20px; }
+
+  .main-nav {
+    float: right; }
+
+  .main-nav a {
+    background: #00baef; }
+
+  /* --- Hero ---*/
+
+  .hero-image {
+    width: 45%; }
+
+  /* --- Portfolio, skills --- */
+
+  .col {
+    float: left; }
+
+  .col, .col h3, .col p {
+    max-width: 328px; }
+
+  .portfolio-image, .skills-image {
+    max-width: 308px; }
+
+  /* --- Contact --- */
+
+  .contact-description, .contact-info {
+    max-width: 40%; }
+
+  /* --- Footer --- */
+
+  .main-footer {
+    padding-bottom: 0;
+    max-width: 984px; }
+
+
+}/* --- end desktop --- */
+
+

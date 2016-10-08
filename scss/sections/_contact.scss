@@ -1,0 +1,22 @@
+/* Contact
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.contact {
+  background: $color-background;
+
+  &-description, &-info {
+  padding: 10px 10px 20px;
+  margin: 0 auto; 
+  
+  @media #{$break-tablet}{
+    max-width: 60%; }
+  @media #{$break-desktop}{
+    max-width: 40%; }
+  }
+
+	&-info {
+  padding: 20px 10px; }
+
+	&-spacing {
+  padding-bottom: 40px; }
+}

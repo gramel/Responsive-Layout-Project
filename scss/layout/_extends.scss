@@ -1,0 +1,17 @@
+/* Extends
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* -- Display -- */
+
+%userview {
+	display: block; }
+
+/* -- Background Color -- */
+
+%background {
+	background: $color-background; }
+
+/* -- Footer Spacing -- */
+
+%footerspace {
+  padding: 20px 10px; }

@@ -1,0 +1,43 @@
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.name a {
+  font-size: 1.10em; 
+  text-align: center; }
+
+.main-nav a {
+  font-size: $regular-size;
+  text-align: center;
+  text-transform: $font-case; }
+
+.hero-description {
+  @include text($regular-size,1.5,$regular-weight);
+  text-align: center; }
+
+.sub-header {
+  font-size: $regular-size;
+  text-align: center;
+  text-transform: $font-case; }
+
+.col h3 {
+  color: #0080af;
+  text-align: center; }
+
+.col p {
+  color: $color-text;
+  line-height: 1.5;
+  text-align: center; }
+
+.contact-description, .contact-info {
+  @include text($regular-size,1.5,$regular-weight,$color-text);
+  text-align: center; }
+
+.contact-info b {
+  color: $color-secondary ; }
+
+.footer-name a {
+  font-size: $small-size ; }
+
+.footer-nav-mobile a {
+  font-size: $small-size ;
+  text-transform: $font-case; }

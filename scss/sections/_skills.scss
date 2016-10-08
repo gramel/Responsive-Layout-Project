@@ -1,0 +1,20 @@
+/* Skills
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.skills {
+  background: #fff;
+
+  &-image {
+  padding: 10px 10px;
+  max-width: 300px;
+
+  @include tablet {
+    max-width: 354px;
+  }
+
+  @include desktop {
+    max-width: 308px;
+  }
+
+  }
+}

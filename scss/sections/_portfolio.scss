@@ -1,0 +1,47 @@
+/* Portfolio
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.portfolio {
+  background: #fff;
+
+  &-image {
+  padding: 10px 10px;
+  max-width: 300px; 
+
+  @include tablet {
+    max-width: 354px;
+  }
+
+  @include desktop {
+    max-width: 308px;
+  }
+	}
+}
+
+@include tablet {
+  .col {
+    float: left; }
+
+  .col {
+    max-width: 374px; }
+}
+
+@include desktop {
+  .col {
+    float: left; }
+
+  .col {
+    max-width: 328px; }
+}
+
+.col h3, .col p {
+  padding: 10px;
+
+  @include tablet {
+    max-width: 374px;
+  }
+
+  @include desktop {
+    max-width: 328px;
+  }
+}

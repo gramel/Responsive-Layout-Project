@@ -1,0 +1,31 @@
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.hero {  
+  background: $color-background;
+
+  &-image {
+  width: 280px; 
+  padding: 20px 20px 20px; 
+
+    @media #{$break-tablet}{
+      float: right;
+      width: 40%;
+      padding: 40px 20px;
+    }
+    @media #{$break-desktop}{
+      width: 45%;
+    }
+	}
+
+  &-description {
+  padding: 20px 20px 40px; 
+
+    @media #{$break-tablet}{
+      padding: 40px 20px;
+      font-size: 1.3em;
+      font-weight: $regular-weight;
+      text-align: left;
+    }
+  }
+}

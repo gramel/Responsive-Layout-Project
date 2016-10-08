@@ -1,0 +1,18 @@
+/* Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu {
+  position: relative;
+  @extend %userview;
+  width: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+
+  @include tablet {
+    display: none !important;
+  }
+}
+
+.menu img {
+  height: 20px;
+  width: 20px; }
